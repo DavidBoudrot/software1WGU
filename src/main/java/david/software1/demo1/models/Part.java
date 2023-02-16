@@ -22,6 +22,7 @@ public abstract class Part {
         this.max = max;
     }
 
+
     /**
      * @return the id
      */

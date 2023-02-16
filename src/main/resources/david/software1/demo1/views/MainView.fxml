@@ -8,7 +8,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="david.software1.demo1.controllers.MainController">
    <children>
       <TableView fx:id="productTable" layoutX="563.0" layoutY="133.0" prefHeight="173.0" prefWidth="427.0">
@@ -21,10 +20,10 @@
       </TableView>
       <TableView fx:id="partTable" layoutX="52.0" layoutY="133.0" prefHeight="173.0" prefWidth="427.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="Part ID" />
-            <TableColumn prefWidth="98.0" text="Part Name" />
-            <TableColumn prefWidth="110.0" text="Inventory Level" />
-            <TableColumn prefWidth="142.0" text="Price/ Cost per Unit" />
+            <TableColumn fx:id="PartNumber" prefWidth="75.0" text="Part ID" />
+            <TableColumn fx:id="PartName" prefWidth="98.0" text="Part Name" />
+            <TableColumn fx:id="PartInventoryLevel" prefWidth="110.0" text="Inventory Level" />
+            <TableColumn fx:id="PartPrice" prefWidth="142.0" text="Price/ Cost per Unit" />
          </columns>
       </TableView>
       <Text layoutX="52.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory Management System" wrappingWidth="385.85398864746094">
@@ -49,7 +48,7 @@
       <Button fx:id="deleteProductButton" layoutX="930.0" layoutY="314.0" mnemonicParsing="false" onAction="#deleteProductButtonClick" text="Delete" />
       <Button fx:id="modifyProductButton" layoutX="862.0" layoutY="314.0" mnemonicParsing="false" onAction="#modifyProductButtonClick" text="Modify" />
       <Button fx:id="addProductButton" layoutX="813.0" layoutY="314.0" mnemonicParsing="false" onAction="#addProductButtonClick" text="Add" />
-      <TextField fx:id="partSearchTextField" layoutX="315.0" layoutY="105.0" promptText="Search by Part ID or Name" />
-      <TextField fx:id="productSearchTextField" layoutX="826.0" layoutY="105.0" promptText="Search by Part ID or Name" />
+      <TextField fx:id="partSearchTextField" layoutX="315.0" layoutY="105.0" onKeyReleased="#partSearchTextField" promptText="Search by Part ID or Name" />
+      <TextField fx:id="productSearchTextField" layoutX="826.0" layoutY="105.0"  onKeyReleased="#productSearchTextField" promptText="Search by Part ID or Name" />
    </children>
 </AnchorPane>
