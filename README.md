@@ -13,7 +13,7 @@
 
 <img src="demo.png" alt="demo" width="1036" height=" 429">
 
-<img src="demo2.png" alt="demo2" width="655" height="914">
+<img src="demo2.png" alt="demo2" width="906" height="651">
 
 
 
