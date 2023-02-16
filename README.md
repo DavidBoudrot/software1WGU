@@ -11,7 +11,7 @@
     Parts will not be able to be deleted if they are associated with products as an extra precaution.
     </p>
 
-<img src="demo.png" alt="demo" width="1046" height=" 463">
+<img src="demo.png" alt="demo" width="1036" height=" 429">
 
 
 
